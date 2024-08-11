@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+body {
+  background-color: rgb(27, 27, 27);
+}
+.opacity {
+  opacity: 50%;
+}
+/* font */
+.kode-mono-font {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.profile .ava {
+  position: relative;
+}
+.profile .ava .semangka {
+  position: absolute;
+  bottom: 4px;
+  right: -1px;
+  font-size: 30px;
+}
+.profile img {
+  border-radius: 50%;
+}
+.profile img:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.profile p {
+  font-weight: 600;
+}
+.text {
+  color: rgb(241, 241, 241);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sosmed a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sosmed .button {
+  display: flex;
+  align-items: center; /* Vertikal align antara ikon dan teks */
+  justify-content: flex-start;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  float: left;
+  margin: 0 5px;
+  background: rgb(141, 110, 226);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.sosmed .button:hover {
+  width: 190px;
+}
+.sosmed .button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.sosmed .button .icon i {
+  font-size: 25px;
+  line-height: normal;
+}
+
+.sosmed .button span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 60px;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sosmed .button:hover span {
+  opacity: 1;
+}
+.footer {
+  display: flex;
+  width: 100hv;
+  height: 100px;
+  align-items: center;
+  /* margin: 100px;
+  padding: 30px; */
+  justify-content: center;
+  color: rgb(241, 241, 241);
+}
