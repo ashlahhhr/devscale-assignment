@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-
+//tes github
 const apiChara = "https://potterapi-fedeperin.vercel.app/en/characters";
 
 async function app() {
